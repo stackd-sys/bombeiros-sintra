@@ -3,176 +3,260 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sobre nós | Bombeiros Voluntários de Sintra</title>
-  <meta name="description" content="História, missão e valores da Associação Humanitária de Bombeiros Voluntários de Sintra.">
-  <meta name="theme-color" content="#d7261e">
-  <link rel="icon" href="assets/img/logo-provisorio.svg" type="image/svg+xml">
+  <title>A Associação | Bombeiros Voluntários de Sintra</title>
+  <meta name="description" content="História, missão, distinções e órgãos sociais da Associação Humanitária de Bombeiros Voluntários de Sintra.">
+  <meta name="theme-color" content="#d31f26">
+  <link rel="icon" href="assets/img/logo-abvsintra.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.3V17h16V7.3zM5.2 7l6.8 4.2L18.8 7z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 4.5A2.5 2.5 0 1 0 12 11.5 2.5 2.5 0 0 0 12 6.5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm1 3v4.6l3.5 2.1-1 1.7L11 12.7V7z"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 2s1 3.2-1.3 6.2C9 10.4 7 12 7 15a5 5 0 0 0 10 0c0-2-1-3.5-1-3.5s-.3 1.8-1.8 2.5c.6-3.3-.7-6.6-2.2-8C12.8 4 12 2 12 2zm0 20a7 7 0 0 1-7-7c0-3.8 2.5-6 4.1-8.1C10.6 5 11 3.3 10.9 1c3.8 1.5 8.1 6.4 8.1 12 0 .7 0 1.4-.1 2A7 7 0 0 1 12 22z"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 .7-.1 1.4-.3 2H15l-1.5-2.5-2.5 5-1.5-2.5H4.9C6.6 16.6 12 20 12 20zM3 13h5.4l1.1 1.8 2.5-5 2 3.2H22v2h-7.1L13.5 12 11 17l-2.4-4H3z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.7-8 11-4.6-1.3-8-6-8-11V5zm-1 13.6l6.2-6.2-1.4-1.4L11 12.8 8.2 10l-1.4 1.4z"/></symbol>
+    <symbol id="i-hands" viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4zm8 0c-.3 0-.7 0-1.1.1A4.2 4.2 0 0 1 17 17v3h7v-3c0-2.7-5.3-4-8-4z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm-1.2 13.6l6.4-6.4-1.4-1.4-5 5-2.4-2.4-1.4 1.4z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M13.2 5.3l6.7 6.7-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.3 2 10 3.5 10 6v2H8v3h2v11h4V11h2.7l.3-3z"/></symbol>
+  </svg>
+
   <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-  <div class="emergency-bar">
+  <div class="topbar">
     <div class="container">
-      <span>Em caso de emergência ligue <a href="tel:112"><strong>112</strong></a></span>
-      <span class="secondary">Quartel: <a href="tel:+351000000000">+351 000 000 000</a> <span class="placeholder-tag">Provisório</span></span>
+      <ul class="info">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Av. da Aviação Portuguesa, 2710-536 Sintra</li>
+        <li class="hide-sm"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:comunicacao@abvsintra.pt">comunicacao@abvsintra.pt</a></li>
+        <li class="hide-sm"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Ao serviço 24 horas por dia</li>
+      </ul>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/bombeirossintra/" aria-label="Facebook" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+      </ul>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html">
-        <img src="assets/img/logo-provisorio.svg" alt="" width="44" height="44">
-        <span>Bombeiros Voluntários<small>de Sintra</small></span>
+        <img src="assets/img/logo-abvsintra.png" alt="Emblema dos Bombeiros Voluntários de Sintra" width="58" height="67">
+        <span><strong>Bombeiros Voluntários</strong><small>Sintra · desde 1890</small></span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
       <nav class="nav" id="menu" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+          <li><a href="sobre.html" aria-current="page">A Associação</a></li>
           <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="socios.html">Sócios</a></li>
           <li><a href="noticias.html">Notícias</a></li>
           <li><a href="contactos.html">Contactos</a></li>
         </ul>
       </nav>
+      <a class="header-call" href="tel:112">
+        <span class="ring"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span><small>Emergência</small><strong>112</strong></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main id="conteudo">
 
-    <section class="page-hero">
+    <section class="page-header" style="background-image:url('assets/img/fotos/cerimonia.jpg')">
       <div class="container">
-        <div class="eyebrow">Sobre nós</div>
-        <h1>Uma história ao serviço de Sintra. <span class="placeholder-tag">Provisório</span></h1>
-        <p class="lead">Texto provisório. Resumo da história da associação, da sua ligação a Sintra e do compromisso com a comunidade.</p>
+        <h1>A Associação</h1>
+        <ul class="breadcrumb"><li><a href="index.html">Início</a></li><li>A Associação</li></ul>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img class="main" src="assets/img/fotos/centenario.jpg" alt="Fachada histórica do quartel no centenário da associação" style="aspect-ratio:4/5">
+          <img class="small" src="assets/img/fotos/viatura-historica.jpg" alt="Viatura histórica dos Bombeiros de Sintra">
+          <div class="badge"><strong>1890</strong><span>Fundação</span></div>
+        </div>
         <div class="reveal">
-          <div class="eyebrow">Missão</div>
-          <h2>Proteger vidas, bens e o património de Sintra.</h2>
-          <p><span class="placeholder-tag">Provisório</span> Texto provisório sobre a missão da associação. Sintra é Património Mundial e tem uma das maiores áreas florestais da região de Lisboa, o que torna o trabalho dos bombeiros particularmente exigente.</p>
-          <p>Substituir por texto oficial da associação.</p>
+          <div class="tagline">A nossa história</div>
+          <h2>Mais de um século ao serviço de Sintra</h2>
+          <p>A Associação dos Bombeiros Voluntários de Sintra é, juntamente com a congénere de Colares, uma das mais antigas associações do concelho, prestando socorro e desempenhando missões humanitárias desde 24 de junho de 1890.</p>
+          <p>Integra o Comando Sub-regional da Grande Lisboa, na Zona Operacional 2, que reúne os nove corpos de bombeiros do concelho. A área de atuação abrange as freguesias de São Martinho, Santa Maria e São Miguel, Terrugem e São João das Lampas, com cerca de 50 000 habitantes, e a zona marítima entre a praia do Magoito e a praia de São Julião.</p>
+          <ul class="checklist">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Real Associação desde 1905</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Crachá de Ouro da LBP</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Fénix de Honra da LBP</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Medalha de Ouro de Sintra</li>
+          </ul>
         </div>
-        <div class="photo reveal" data-label="Foto provisória da corporação"></div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-gray">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Valores</div>
-            <h2>O que nos move</h2>
-          </div>
+        <div class="section-title">
+          <div class="tagline">Marcos históricos</div>
+          <h2>Distinções ao longo do tempo</h2>
         </div>
-        <div class="values">
-          <div class="value-card reveal"><h3>Altruísmo</h3><p>Servir os outros sem esperar nada em troca.</p></div>
-          <div class="value-card reveal"><h3>Prontidão</h3><p>Estar pronto a qualquer hora, em qualquer lugar.</p></div>
-          <div class="value-card reveal"><h3>Rigor</h3><p>Formação, disciplina e profissionalismo em cada missão.</p></div>
-          <div class="value-card reveal"><h3>Comunidade</h3><p>Uma associação que pertence a quem vive em Sintra.</p></div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><div class="year">1890</div><h4>Fundação</h4><p>A 24 de junho nasce a associação. Em agosto recebe louvor da Rainha D. Amélia.</p></div>
+          <div class="timeline-item reveal"><div class="year">1905</div><h4>Real Associação</h4><p>É nomeada Real Associação de Bombeiros.</p></div>
+          <div class="timeline-item reveal"><div class="year">1930</div><h4>Medalha de Ouro</h4><p>Medalha de Ouro por Serviços Distintos, da Câmara Municipal de Sintra.</p></div>
+          <div class="timeline-item reveal"><div class="year">1933</div><h4>Distinção oficial</h4><p>Oficial da Ordem de Emergência.</p></div>
+          <div class="timeline-item reveal"><div class="year">1990</div><h4>Crachá de Ouro</h4><p>Crachá de Ouro da Liga dos Bombeiros Portugueses, no centenário.</p></div>
+          <div class="timeline-item reveal"><div class="year">2006</div><h4>Mérito Municipal</h4><p>Medalha de Mérito Municipal Grau Ouro, da Câmara Municipal de Sintra.</p></div>
+          <div class="timeline-item reveal"><div class="year">2015</div><h4>Fénix de Honra</h4><p>Fénix de Honra da Liga dos Bombeiros Portugueses.</p></div>
+          <div class="timeline-item reveal"><div class="year">2018</div><h4>Vila Viçosa</h4><p>Medalha de Mérito da Ordem de Nossa Senhora da Conceição de Vila Viçosa.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section" style="background-image:url('assets/img/fotos/formatura-quartel.jpg')">
+      <div class="container">
+        <div class="quote-box reveal">
+          <span class="mark" aria-hidden="true">“</span>
+          <blockquote>Servir a comunidade com dedicação, profissionalismo e humanismo é o nosso compromisso diário. Conte connosco. Queremos contar consigo.</blockquote>
+          <cite><strong>José Bento Marques</strong><span>Presidente da Direção</span></cite>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split" style="align-items:start">
+      <div class="container">
+        <div class="section-title center">
+          <div class="tagline center">Órgãos sociais</div>
+          <h2>Quem dirige a associação</h2>
+          <p>A associação é gerida por três órgãos sociais eleitos em Assembleia Geral, com mandatos de três anos.</p>
+        </div>
+        <div class="board">
+          <div class="board-card reveal">
+            <h3>Mesa da Assembleia Geral</h3>
+            <div class="term">Mandato 2023–2026</div>
+            <ul>
+              <li><span>Presidente</span><strong>Dr. Francisco Hermínio P. dos Santos</strong></li>
+              <li><span>Vice-Presidente</span><strong>Paulo Monteiro</strong></li>
+              <li><span>Secretário</span><strong>João Macedo</strong></li>
+              <li><span>Suplente</span><strong>Dr. Américo Pires</strong></li>
+            </ul>
+          </div>
+          <div class="board-card reveal">
+            <h3>Direção</h3>
+            <div class="term">Mandato 2023–2026</div>
+            <ul>
+              <li><span>Presidente</span><strong>Dr. José António Bento Marques</strong></li>
+              <li><span>Vice-Presidentes</span><strong>Vítor Feiteira, Carlos Andrade, António Encarnação</strong></li>
+              <li><span>Tesoureira</span><strong>Maria Lopes</strong></li>
+              <li><span>Secretário</span><strong>Dr. Nuno Silva</strong></li>
+              <li><span>Secretário Adjunto</span><strong>Fernando Andrade</strong></li>
+              <li><span>Suplentes</span><strong>Dra. Carla Antunes, Francisco C. Inácio</strong></li>
+            </ul>
+          </div>
+          <div class="board-card reveal">
+            <h3>Conselho Fiscal</h3>
+            <div class="term">Mandato 2023–2026</div>
+            <ul>
+              <li><span>Presidente</span><strong>Eng.º Dinis Martins</strong></li>
+              <li><span>Vice-Presidente</span><strong>Ana Carriço</strong></li>
+              <li><span>Relatora</span><strong>Ana Bernardo</strong></li>
+              <li><span>Suplente</span><strong>Henrique Duarte</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark on-dark">
+      <div class="container">
+        <div class="section-title center">
+          <div class="tagline center">Corpo de bombeiros</div>
+          <h2>Mais do que socorro</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="img"><img src="assets/img/fotos/cadetes.jpg" alt="Escola de Infantes e Cadetes" loading="lazy"><span class="num">01</span></div>
+            <div class="body"><h3>Escola de Infantes e Cadetes</h3><p>Formamos as próximas gerações de bombeiros, com valores de entreajuda e cidadania.</p></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="img"><img src="assets/img/fotos/fanfarra.jpg" alt="Fanfarra" loading="lazy"><span class="num">02</span></div>
+            <div class="body"><h3>Fanfarra</h3><p>Fundada em 1950, representa a corporação em cerimónias, desfiles e festividades da região.</p></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="img"><img src="assets/img/fotos/grupo-desportivo.jpg" alt="Grupo Desportivo" loading="lazy"><span class="num">03</span></div>
+            <div class="body"><h3>Grupo Desportivo</h3><p>Promove a preparação física e o espírito de equipa, com participação em provas distritais e nacionais.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" style="background-image:url('assets/img/fotos/chamas.jpg')">
+      <div class="container">
         <div>
-          <div class="eyebrow">História</div>
-          <h2>Marcos do nosso percurso</h2>
-          <p><span class="placeholder-tag">Provisório</span> Datas e factos de exemplo. A preencher com a cronologia real da associação.</p>
+          <div class="tagline" style="color:#fff">Junte-se a nós</div>
+          <h2>Torne-se sócio e ajude quem nos protege</h2>
+          <p>Por 24 € por ano contribui diretamente para os meios de socorro de Sintra e tem descontos nos nossos serviços.</p>
         </div>
-        <ol class="timeline">
-          <li class="reveal"><div class="year">0000</div><p>Fundação da associação.</p></li>
-          <li class="reveal"><div class="year">0000</div><p>Inauguração do quartel-sede.</p></li>
-          <li class="reveal"><div class="year">0000</div><p>Criação da secção de emergência pré-hospitalar.</p></li>
-          <li class="reveal"><div class="year">0000</div><p>Modernização da frota e do equipamento.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Órgãos sociais</div>
-            <h2>Direção e comando</h2>
-          </div>
-          <p><span class="placeholder-tag">Provisório</span> Nomes e cargos a indicar pela associação.</p>
-        </div>
-        <div class="values">
-          <div class="value-card"><div class="photo" data-label="Foto" style="min-height:220px;margin-bottom:16px"></div><h3>Nome Apelido</h3><p>Presidente da Direção</p></div>
-          <div class="value-card"><div class="photo" data-label="Foto" style="min-height:220px;margin-bottom:16px"></div><h3>Nome Apelido</h3><p>Comandante</p></div>
-          <div class="value-card"><div class="photo" data-label="Foto" style="min-height:220px;margin-bottom:16px"></div><h3>Nome Apelido</h3><p>2.º Comandante</p></div>
-          <div class="value-card"><div class="photo" data-label="Foto" style="min-height:220px;margin-bottom:16px"></div><h3>Nome Apelido</h3><p>Adjunto de Comando</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta reveal">
-          <div>
-            <h2>Junte-se a nós. Faça parte do corpo de bombeiros.</h2>
-            <p style="margin:16px 0 0;max-width:32em">Seja como bombeiro voluntário ou como sócio, o seu apoio mantém Sintra mais segura.</p>
-          </div>
-          <div class="actions">
-            <a class="btn btn-dark" href="contactos.html">Quero ser voluntário</a>
-            <a class="btn btn-ghost" href="contactos.html">Tornar-me sócio</a>
-          </div>
-        </div>
+        <a class="btn btn-white" href="socios.html">Tornar-me sócio <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+    <div class="footer-top">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo-abvsintra.png" alt="" width="58" height="67">
+          <span><strong>Bombeiros Voluntários</strong><small>Sintra · desde 1890</small></span>
+        </a>
+        <a class="footer-emergency" href="tel:112"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Emergência<br><strong>112</strong></span></a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container footer-grid">
         <div>
-          <a class="brand" href="index.html">
-            <img src="assets/img/logo-provisorio.svg" alt="" width="44" height="44">
-            <span>Bombeiros Voluntários<small>de Sintra</small></span>
-          </a>
-          <p style="margin-top:16px;max-width:22em">Associação Humanitária de Bombeiros Voluntários de Sintra. Ao serviço da população, 24 horas por dia.</p>
+          <h4>Vida por vida</h4>
+          <p>Associação Humanitária de Bombeiros Voluntários de Sintra. Ao serviço da comunidade desde 24 de junho de 1890, a proteger, socorrer e salvar vidas.</p>
         </div>
         <div>
           <h4>Navegação</h4>
-          <ul>
-            <li><a href="sobre.html">Sobre nós</a></li>
+          <ul class="footer-links">
+            <li><a href="sobre.html">A Associação</a></li>
             <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="socios.html">Sócios</a></li>
             <li><a href="noticias.html">Notícias</a></li>
             <li><a href="contactos.html">Contactos</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contactos</h4>
-          <ul>
-            <li>Emergência: <a href="tel:112">112</a></li>
-            <li><a href="tel:+351000000000">+351 000 000 000</a></li>
-            <li><a href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></li>
-            <li><span class="placeholder-tag">Provisório</span></li>
+          <h4>Ligações úteis</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.cm-sintra.pt/" target="_blank" rel="noopener">Câmara Municipal de Sintra</a></li>
+            <li><a href="https://www.prociv.gov.pt/" target="_blank" rel="noopener">Proteção Civil (ANEPC)</a></li>
+            <li><a href="https://www.enb.pt/" target="_blank" rel="noopener">Escola Nacional de Bombeiros</a></li>
+            <li><a href="https://www.inem.pt/" target="_blank" rel="noopener">INEM</a></li>
           </ul>
         </div>
         <div>
-          <h4>Redes sociais</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">YouTube</a></li>
+          <h4>Contactos</h4>
+          <ul class="footer-contact">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Av. da Aviação Portuguesa<br>2710-536 Sintra</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+351219236200">21 923 62 00</a></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:comunicacao@abvsintra.pt">comunicacao@abvsintra.pt</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
         <span>© <span data-year>2026</span> Associação Humanitária de Bombeiros Voluntários de Sintra</span>
-        <span><a href="#">Política de privacidade</a></span>
+        <a href="https://www.facebook.com/bombeirossintra/" target="_blank" rel="noopener">Siga-nos no Facebook</a>
       </div>
     </div>
   </footer>

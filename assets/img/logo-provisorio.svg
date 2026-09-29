@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logótipo provisório">
-  <!-- Logótipo PROVISÓRIO: substituir pelo logótipo oficial da associação -->
-  <path d="M32 3 L57 12 V32 C57 47 46 57 32 61 C18 57 7 47 7 32 V12 Z" fill="#d7261e"/>
-  <path d="M32 16 C36 24 44 27 44 37 C44 44 38.5 49 32 49 C25.5 49 20 44 20 37 C20 31 24 28 26 24 C27 29 29 31 31 31 C30 25 31 20 32 16 Z" fill="#ffb400"/>
-  <path d="M32 34 C34 37 37 38.5 37 42 C37 45 34.8 47 32 47 C29.2 47 27 45 27 42 C27 39 30 37 32 34 Z" fill="#fff"/>
-</svg>

@@ -5,123 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Notícias | Bombeiros Voluntários de Sintra</title>
   <meta name="description" content="Notícias, ocorrências e atividades dos Bombeiros Voluntários de Sintra.">
-  <meta name="theme-color" content="#d7261e">
-  <link rel="icon" href="assets/img/logo-provisorio.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#d31f26">
+  <link rel="icon" href="assets/img/logo-abvsintra.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.3V17h16V7.3zM5.2 7l6.8 4.2L18.8 7z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 4.5A2.5 2.5 0 1 0 12 11.5 2.5 2.5 0 0 0 12 6.5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm1 3v4.6l3.5 2.1-1 1.7L11 12.7V7z"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 2s1 3.2-1.3 6.2C9 10.4 7 12 7 15a5 5 0 0 0 10 0c0-2-1-3.5-1-3.5s-.3 1.8-1.8 2.5c.6-3.3-.7-6.6-2.2-8C12.8 4 12 2 12 2zm0 20a7 7 0 0 1-7-7c0-3.8 2.5-6 4.1-8.1C10.6 5 11 3.3 10.9 1c3.8 1.5 8.1 6.4 8.1 12 0 .7 0 1.4-.1 2A7 7 0 0 1 12 22z"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 .7-.1 1.4-.3 2H15l-1.5-2.5-2.5 5-1.5-2.5H4.9C6.6 16.6 12 20 12 20zM3 13h5.4l1.1 1.8 2.5-5 2 3.2H22v2h-7.1L13.5 12 11 17l-2.4-4H3z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.7-8 11-4.6-1.3-8-6-8-11V5zm-1 13.6l6.2-6.2-1.4-1.4L11 12.8 8.2 10l-1.4 1.4z"/></symbol>
+    <symbol id="i-hands" viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4zm8 0c-.3 0-.7 0-1.1.1A4.2 4.2 0 0 1 17 17v3h7v-3c0-2.7-5.3-4-8-4z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm-1.2 13.6l6.4-6.4-1.4-1.4-5 5-2.4-2.4-1.4 1.4z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M13.2 5.3l6.7 6.7-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.3 2 10 3.5 10 6v2H8v3h2v11h4V11h2.7l.3-3z"/></symbol>
+  </svg>
+
   <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-  <div class="emergency-bar">
+  <div class="topbar">
     <div class="container">
-      <span>Em caso de emergência ligue <a href="tel:112"><strong>112</strong></a></span>
-      <span class="secondary">Quartel: <a href="tel:+351000000000">+351 000 000 000</a> <span class="placeholder-tag">Provisório</span></span>
+      <ul class="info">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Av. da Aviação Portuguesa, 2710-536 Sintra</li>
+        <li class="hide-sm"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:comunicacao@abvsintra.pt">comunicacao@abvsintra.pt</a></li>
+        <li class="hide-sm"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Ao serviço 24 horas por dia</li>
+      </ul>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/bombeirossintra/" aria-label="Facebook" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+      </ul>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html">
-        <img src="assets/img/logo-provisorio.svg" alt="" width="44" height="44">
-        <span>Bombeiros Voluntários<small>de Sintra</small></span>
+        <img src="assets/img/logo-abvsintra.png" alt="Emblema dos Bombeiros Voluntários de Sintra" width="58" height="67">
+        <span><strong>Bombeiros Voluntários</strong><small>Sintra · desde 1890</small></span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
       <nav class="nav" id="menu" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="sobre.html">A Associação</a></li>
           <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="socios.html">Sócios</a></li>
           <li><a href="noticias.html" aria-current="page">Notícias</a></li>
           <li><a href="contactos.html">Contactos</a></li>
         </ul>
       </nav>
+      <a class="header-call" href="tel:112">
+        <span class="ring"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span><small>Emergência</small><strong>112</strong></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main id="conteudo">
 
-    <section class="page-hero">
+    <section class="page-header" style="background-image:url('assets/img/fotos/fumo-serra.jpg')">
       <div class="container">
-        <div class="eyebrow">Notícias</div>
-        <h1>O que se passa no quartel.</h1>
-        <p class="lead">Ocorrências, formação, eventos e novidades da associação. <span class="placeholder-tag">Provisório</span></p>
+        <h1>Notícias</h1>
+        <ul class="breadcrumb"><li><a href="index.html">Início</a></li><li>Notícias</li></ul>
+      </div>
+    </section>
+
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-title center">
+          <div class="tagline center">Atualidade</div>
+          <h2>O que se passa no quartel</h2>
+          <p><span class="placeholder-tag">Provisório</span> Estas notícias são exemplos. As notícias reais são publicadas diariamente no Facebook da associação.</p>
+        </div>
+        <div class="news-grid">
+          <a class="news-card reveal" href="noticias.html">
+            <div class="img"><img src="assets/img/fotos/combate-serra.jpg" alt="" loading="lazy"><div class="date"><strong>12</strong><span>Set</span></div></div>
+            <div class="body">
+              <div class="cat">Ocorrências</div>
+              <h3>Balanço da época de incêndios na Serra de Sintra</h3>
+              <p><span class="placeholder-tag">Provisório</span> Resumo de exemplo. As notícias reais são publicadas no Facebook da associação.</p>
+              <span class="more">Ler mais <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="news-card reveal" href="noticias.html">
+            <div class="img"><img src="assets/img/fotos/cadetes.jpg" alt="" loading="lazy"><div class="date"><strong>28</strong><span>Ago</span></div></div>
+            <div class="body">
+              <div class="cat">Escola de Infantes e Cadetes</div>
+              <h3>Novos cadetes iniciam a formação no quartel</h3>
+              <p><span class="placeholder-tag">Provisório</span> Resumo de exemplo. As notícias reais são publicadas no Facebook da associação.</p>
+              <span class="more">Ler mais <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="news-card reveal" href="noticias.html">
+            <div class="img"><img src="assets/img/fotos/fanfarra.jpg" alt="" loading="lazy"><div class="date"><strong>15</strong><span>Ago</span></div></div>
+            <div class="body">
+              <div class="cat">Fanfarra</div>
+              <h3>Fanfarra atua nas festas do concelho</h3>
+              <p><span class="placeholder-tag">Provisório</span> Resumo de exemplo. As notícias reais são publicadas no Facebook da associação.</p>
+              <span class="more">Ler mais <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <a class="news-featured reveal" href="#">
-          <div class="photo" data-label="Foto provisória em destaque"></div>
-          <div class="body">
-            <time>Destaque · 20 set 2026</time>
-            <h2>Título da notícia em destaque</h2>
-            <p><span class="placeholder-tag">Provisório</span> Texto de exemplo para a notícia principal. Substituir pelo conteúdo real enviado pela associação.</p>
-            <span class="btn btn-primary" style="align-self:flex-start;margin-top:12px">Ler notícia</span>
-          </div>
-        </a>
-
-        <div class="filters" role="group" aria-label="Filtrar notícias">
-          <button type="button" data-filter="todas" aria-pressed="true">Todas</button>
-          <button type="button" data-filter="ocorrencias" aria-pressed="false">Ocorrências</button>
-          <button type="button" data-filter="formacao" aria-pressed="false">Formação</button>
-          <button type="button" data-filter="comunidade" aria-pressed="false">Comunidade</button>
-          <button type="button" data-filter="equipamento" aria-pressed="false">Equipamento</button>
+      <div class="container about-grid">
+        <div class="reveal">
+          <div class="tagline">Facebook</div>
+          <h2>Acompanhe-nos em tempo real</h2>
+          <p>Ocorrências, avisos à população, formações e eventos são publicados em primeira mão na nossa página de Facebook.</p>
+          <a class="btn btn-red" href="https://www.facebook.com/bombeirossintra/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> Ver página no Facebook</a>
         </div>
-
-        <div class="news-grid">
-          <a class="news-card reveal" href="#" data-cat="formacao">
-            <div class="photo" data-label="Foto provisória"></div>
-            <div class="body">
-              <time>Formação · 12 set 2026</time>
-              <h3>Nova turma de recrutas inicia formação</h3>
-              <p>Texto de exemplo para a notícia. Substituir pelo conteúdo real enviado pela associação.</p>
-            </div>
-          </a>
-          <a class="news-card reveal" href="#" data-cat="ocorrencias">
-            <div class="photo" data-label="Foto provisória"></div>
-            <div class="body">
-              <time>Ocorrências · 3 set 2026</time>
-              <h3>Balanço da época de incêndios</h3>
-              <p>Texto de exemplo para a notícia. Substituir pelo conteúdo real enviado pela associação.</p>
-            </div>
-          </a>
-          <a class="news-card reveal" href="#" data-cat="comunidade">
-            <div class="photo" data-label="Foto provisória"></div>
-            <div class="body">
-              <time>Comunidade · 28 ago 2026</time>
-              <h3>Visita das escolas ao quartel</h3>
-              <p>Texto de exemplo para a notícia. Substituir pelo conteúdo real enviado pela associação.</p>
-            </div>
-          </a>
-          <a class="news-card reveal" href="#" data-cat="equipamento">
-            <div class="photo" data-label="Foto provisória"></div>
-            <div class="body">
-              <time>Equipamento · 15 ago 2026</time>
-              <h3>Nova viatura ao serviço da população</h3>
-              <p>Texto de exemplo para a notícia. Substituir pelo conteúdo real enviado pela associação.</p>
-            </div>
-          </a>
-          <a class="news-card reveal" href="#" data-cat="comunidade">
-            <div class="photo" data-label="Foto provisória"></div>
-            <div class="body">
-              <time>Comunidade · 2 ago 2026</time>
-              <h3>Campanha de angariação de sócios</h3>
-              <p>Texto de exemplo para a notícia. Substituir pelo conteúdo real enviado pela associação.</p>
-            </div>
-          </a>
-          <a class="news-card reveal" href="#" data-cat="formacao">
-            <div class="photo" data-label="Foto provisória"></div>
-            <div class="body">
-              <time>Formação · 20 jul 2026</time>
-              <h3>Simulacro conjunto com a Proteção Civil</h3>
-              <p>Texto de exemplo para a notícia. Substituir pelo conteúdo real enviado pela associação.</p>
-            </div>
-          </a>
+        <div class="reveal">
+          <iframe title="Publicações do Facebook dos Bombeiros Voluntários de Sintra" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbombeirossintra%2F&amp;tabs=timeline&amp;width=500&amp;height=640&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false" width="500" height="640" style="border:none;overflow:hidden;max-width:100%" loading="lazy" allow="encrypted-media"></iframe>
         </div>
       </div>
     </section>
@@ -129,45 +133,54 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+    <div class="footer-top">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo-abvsintra.png" alt="" width="58" height="67">
+          <span><strong>Bombeiros Voluntários</strong><small>Sintra · desde 1890</small></span>
+        </a>
+        <a class="footer-emergency" href="tel:112"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Emergência<br><strong>112</strong></span></a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container footer-grid">
         <div>
-          <a class="brand" href="index.html">
-            <img src="assets/img/logo-provisorio.svg" alt="" width="44" height="44">
-            <span>Bombeiros Voluntários<small>de Sintra</small></span>
-          </a>
-          <p style="margin-top:16px;max-width:22em">Associação Humanitária de Bombeiros Voluntários de Sintra. Ao serviço da população, 24 horas por dia.</p>
+          <h4>Vida por vida</h4>
+          <p>Associação Humanitária de Bombeiros Voluntários de Sintra. Ao serviço da comunidade desde 24 de junho de 1890, a proteger, socorrer e salvar vidas.</p>
         </div>
         <div>
           <h4>Navegação</h4>
-          <ul>
-            <li><a href="sobre.html">Sobre nós</a></li>
+          <ul class="footer-links">
+            <li><a href="sobre.html">A Associação</a></li>
             <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="socios.html">Sócios</a></li>
             <li><a href="noticias.html">Notícias</a></li>
             <li><a href="contactos.html">Contactos</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contactos</h4>
-          <ul>
-            <li>Emergência: <a href="tel:112">112</a></li>
-            <li><a href="tel:+351000000000">+351 000 000 000</a></li>
-            <li><a href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></li>
-            <li><span class="placeholder-tag">Provisório</span></li>
+          <h4>Ligações úteis</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.cm-sintra.pt/" target="_blank" rel="noopener">Câmara Municipal de Sintra</a></li>
+            <li><a href="https://www.prociv.gov.pt/" target="_blank" rel="noopener">Proteção Civil (ANEPC)</a></li>
+            <li><a href="https://www.enb.pt/" target="_blank" rel="noopener">Escola Nacional de Bombeiros</a></li>
+            <li><a href="https://www.inem.pt/" target="_blank" rel="noopener">INEM</a></li>
           </ul>
         </div>
         <div>
-          <h4>Redes sociais</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">YouTube</a></li>
+          <h4>Contactos</h4>
+          <ul class="footer-contact">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Av. da Aviação Portuguesa<br>2710-536 Sintra</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+351219236200">21 923 62 00</a></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:comunicacao@abvsintra.pt">comunicacao@abvsintra.pt</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
         <span>© <span data-year>2026</span> Associação Humanitária de Bombeiros Voluntários de Sintra</span>
-        <span><a href="#">Política de privacidade</a></span>
+        <a href="https://www.facebook.com/bombeirossintra/" target="_blank" rel="noopener">Siga-nos no Facebook</a>
       </div>
     </div>
   </footer>
