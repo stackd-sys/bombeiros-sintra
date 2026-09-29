@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactos | Bombeiros Voluntários de Sintra</title>
+  <meta name="description" content="Contacte a Associação Humanitária de Bombeiros Voluntários de Sintra.">
+  <meta name="theme-color" content="#d7261e">
+  <link rel="icon" href="assets/img/logo-provisorio.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <div class="emergency-bar">
+    <div class="container">
+      <span>Em caso de emergência ligue <a href="tel:112"><strong>112</strong></a></span>
+      <span class="secondary">Quartel: <a href="tel:+351000000000">+351 000 000 000</a> <span class="placeholder-tag">Provisório</span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-provisorio.svg" alt="" width="44" height="44">
+        <span>Bombeiros Voluntários<small>de Sintra</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contactos.html" aria-current="page">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Contactos</div>
+        <h1>Fale connosco.</h1>
+        <p class="lead">Para emergências ligue sempre 112. Para outros assuntos, use os contactos abaixo ou o formulário.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <div class="emergency-box">
+            <div class="big">112</div>
+            <p style="margin:8px 0 0">Número Europeu de Emergência. Gratuito, 24 horas por dia.</p>
+          </div>
+          <p><span class="placeholder-tag">Provisório</span> Contactos de exemplo, a substituir pelos oficiais.</p>
+          <ul class="contact-list">
+            <li><span class="k">Morada</span><span class="v">Rua Exemplo, 0000-000 Sintra</span></li>
+            <li><span class="k">Telefone do quartel</span><a class="v" href="tel:+351000000000">+351 000 000 000</a></li>
+            <li><span class="k">Email</span><a class="v" href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></li>
+            <li><span class="k">Secretaria</span><span class="v">Dias úteis, 09h00 às 18h00</span></li>
+          </ul>
+        </div>
+
+        <form class="form" action="#" method="post">
+          <h2 style="font-size:1.8rem">Envie-nos uma mensagem</h2>
+          <div class="row">
+            <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" required autocomplete="name"></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" autocomplete="tel"></div>
+            <div class="field">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option>Informação geral</option>
+                <option>Quero ser voluntário</option>
+                <option>Quero ser sócio</option>
+                <option>Transporte de doentes</option>
+                <option>Formação</option>
+                <option>Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+          <p class="form-note" style="margin-top:12px">Não use este formulário para emergências. <span class="placeholder-tag">Provisório</span> O envio ainda não está ligado a nenhum serviço.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="photo map" data-label="Mapa provisório (inserir Google Maps ou OpenStreetMap)"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="assets/img/logo-provisorio.svg" alt="" width="44" height="44">
+            <span>Bombeiros Voluntários<small>de Sintra</small></span>
+          </a>
+          <p style="margin-top:16px;max-width:22em">Associação Humanitária de Bombeiros Voluntários de Sintra. Ao serviço da população, 24 horas por dia.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contactos</h4>
+          <ul>
+            <li>Emergência: <a href="tel:112">112</a></li>
+            <li><a href="tel:+351000000000">+351 000 000 000</a></li>
+            <li><a href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></li>
+            <li><span class="placeholder-tag">Provisório</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Redes sociais</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Associação Humanitária de Bombeiros Voluntários de Sintra</span>
+        <span><a href="#">Política de privacidade</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
