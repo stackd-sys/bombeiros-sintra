@@ -32,6 +32,7 @@
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M13.2 5.3l6.7 6.7-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z"/></symbol>
     <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.3 2 10 3.5 10 6v2H8v3h2v11h4V11h2.7l.3-3z"/></symbol>
     <symbol id="i-hydrant" viewBox="0 0 24 24"><path d="M11 1h2v2h1a4 4 0 0 1 4 4H6a4 4 0 0 1 4-4h1zM5 8h14v2h-1v3h2v4h-2v3h1v2H5v-2h1v-3H4v-4h2v-3H5zm7 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-3.3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></symbol>
   </svg>
 
   <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
@@ -39,12 +40,13 @@
   <div class="topbar">
     <div class="container">
       <ul class="info">
-        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Av. da Aviação Portuguesa, 2710-536 Sintra</li>
+        <li class="hide-sm"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Av. da Aviação Portuguesa, 2710-536 Sintra</li>
         <li class="hide-sm"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:comunicacao@abvsintra.pt">comunicacao@abvsintra.pt</a></li>
       </ul>
-      <ul class="social">
-        <li><a href="https://www.facebook.com/bombeirossintra/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a></li>
-      </ul>
+      <a class="live-occ" href="ocorrencias.html">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span><strong data-occ-count>3</strong> <span data-occ-label>ocorrências ativas</span></span>
+      </a>
     </div>
   </div>
 
@@ -230,7 +232,7 @@
             <img src="assets/img/logo-abvsintra.png" alt="" width="56" height="65">
             <span><strong>Bombeiros<br>Voluntários</strong><small>Sintra · 1890</small></span>
           </a>
-          <div class="social"><a href="https://www.facebook.com/bombeirossintra/" aria-label="Facebook" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a></div>
+          <div class="social"><a href="https://www.facebook.com/bombeirossintra/" aria-label="Facebook" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a><a href="https://www.instagram.com/bombeirossintra/" aria-label="Instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></div>
         </div>
       </div>
     </div>
@@ -274,5 +276,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>

@@ -78,3 +78,27 @@ if (form) {
     form.reset();
   });
 }
+
+// Ocorrências: fonte única de dados (por agora ficheiro de demonstração).
+// Quando houver chave do Fogos.pt, basta mudar OCORRENCIAS_URL para a função do Vercel.
+const OCORRENCIAS_URL = 'assets/data/ocorrencias-demo.json';
+window.carregarOcorrencias = () =>
+  fetch(OCORRENCIAS_URL, { cache: 'no-store' })
+    .then((r) => r.json())
+    .then((json) => json.ocorrencias.map((o) => ({
+      ...o,
+      data: o.data ? new Date(o.data) : new Date(Date.now() - (o.minutos_atras || 0) * 60000),
+    })).sort((a, b) => b.data - a.data));
+
+// Contador de ocorrências ativas na barra superior
+const occCount = document.querySelector('[data-occ-count]');
+if (occCount) {
+  const occLabel = document.querySelector('[data-occ-label]');
+  const refreshCount = () => window.carregarOcorrencias().then((lista) => {
+    const n = lista.filter((o) => o.estado !== 'Concluída').length;
+    occCount.textContent = n;
+    if (occLabel) occLabel.textContent = n === 1 ? 'ocorrência ativa' : 'ocorrências ativas';
+  }).catch(() => {});
+  refreshCount();
+  setInterval(refreshCount, 120000);
+}

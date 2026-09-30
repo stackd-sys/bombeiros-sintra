@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Notícias | Bombeiros Voluntários de Sintra</title>
-  <meta name="description" content="Notícias, ocorrências e atividades dos Bombeiros Voluntários de Sintra.">
+  <title>Ocorrências | Bombeiros Voluntários de Sintra</title>
+  <meta name="description" content="Ocorrências ativas e recentes na área de atuação dos Bombeiros Voluntários de Sintra.">
   <meta name="theme-color" content="#222628">
   <link rel="icon" href="assets/img/logo-abvsintra.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -62,7 +63,7 @@
           <li><a href="sobre.html">A Associação</a></li>
           <li><a href="servicos.html">Serviços</a></li>
           <li><a href="socios.html">Sócios</a></li>
-          <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
           <li><a href="contactos.html">Contactos</a></li>
         </ul>
       </nav>
@@ -78,65 +79,57 @@
 
   <main id="conteudo">
 
-    <section class="page-header" style="background-image:url('assets/img/fotos/fumo-serra.jpg')">
+    <section class="page-header" style="background-image:url('assets/img/fotos/combate-serra.jpg')">
       <div class="container">
-        <h1>Notícias</h1>
-        <ul class="breadcrumb"><li><a href="index.html">Início</a></li><li>Notícias</li></ul>
+        <h1>Ocorrências</h1>
+        <ul class="breadcrumb"><li><a href="index.html">Início</a></li><li>Ocorrências</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section occ-section">
       <div class="container">
-        <div class="section-title center">
-          <div class="tagline"><svg class="icon" aria-hidden="true"><use href="#i-hydrant"/></svg>Atualidade</div>
-          <h2>O que se passa no quartel</h2>
-          <p><span class="placeholder-tag">Provisório</span> Estas notícias são exemplos. As notícias reais são publicadas no Facebook da associação.</p>
+        <div class="occ-demo" role="note"><span class="placeholder-tag">Demonstração</span> Estes dados são fictícios. Em breve serão substituídos pelas ocorrências reais da Proteção Civil (ANEPC).</div>
+
+        <div class="section-title">
+          <div class="tagline"><svg class="icon" aria-hidden="true"><use href="#i-hydrant"/></svg>Em tempo real</div>
+          <h2>Ocorrências na área de Sintra</h2>
+          <p class="occ-updated">Atualizado <span data-occ-updated>agora</span></p>
         </div>
-        <div class="news-grid">
-          <a class="news-card reveal" href="noticias.html">
-            <div class="img"><img src="assets/img/fotos/combate-serra.jpg" alt="" loading="lazy"><span class="date">12 set 2026</span></div>
-            <div class="body">
-              <div class="meta"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Ocorrências</div>
-              <h3>Balanço da época de incêndios na Serra de Sintra</h3>
-              <p><span class="placeholder-tag">Provisório</span> Resumo de exemplo. As notícias reais são publicadas no Facebook.</p>
-              <span class="more">Ler mais</span>
-            </div>
-          </a>
-          <a class="news-card reveal" href="noticias.html">
-            <div class="img"><img src="assets/img/fotos/cadetes.jpg" alt="" loading="lazy"><span class="date">28 ago 2026</span></div>
-            <div class="body">
-              <div class="meta"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Escola de Cadetes</div>
-              <h3>Novos cadetes iniciam a formação no quartel</h3>
-              <p><span class="placeholder-tag">Provisório</span> Resumo de exemplo. As notícias reais são publicadas no Facebook.</p>
-              <span class="more">Ler mais</span>
-            </div>
-          </a>
-          <a class="news-card reveal" href="noticias.html">
-            <div class="img"><img src="assets/img/fotos/fanfarra.jpg" alt="" loading="lazy"><span class="date">15 ago 2026</span></div>
-            <div class="body">
-              <div class="meta"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Fanfarra</div>
-              <h3>Fanfarra atua nas festas do concelho</h3>
-              <p><span class="placeholder-tag">Provisório</span> Resumo de exemplo. As notícias reais são publicadas no Facebook.</p>
-              <span class="more">Ler mais</span>
-            </div>
-          </a>
+
+        <div class="occ-stats">
+          <div class="occ-stat is-live"><span class="live-dot" aria-hidden="true"></span><strong data-stat="ativas">0</strong><span>Ativas</span></div>
+          <div class="occ-stat"><strong data-stat="operacionais">0</strong><span>Operacionais no terreno</span></div>
+          <div class="occ-stat"><strong data-stat="viaturas">0</strong><span>Viaturas</span></div>
+          <div class="occ-stat"><strong data-stat="total">0</strong><span>Ocorrências hoje</span></div>
+        </div>
+
+        <div class="occ-filters" role="group" aria-label="Filtrar ocorrências">
+          <button type="button" data-filter="todas" aria-pressed="true">Todas</button>
+          <button type="button" data-filter="ativas" aria-pressed="false">Só ativas</button>
+          <button type="button" data-filter="incendio" aria-pressed="false">Incêndios</button>
+          <button type="button" data-filter="saude" aria-pressed="false">Saúde</button>
+          <button type="button" data-filter="acidente" aria-pressed="false">Acidentes e salvamentos</button>
+          <button type="button" data-filter="outro" aria-pressed="false">Outras</button>
+        </div>
+
+        <div class="occ-layout">
+          <div class="occ-map" id="occ-map" aria-label="Mapa das ocorrências"></div>
+          <div class="occ-list" id="occ-list" aria-live="polite"></div>
+        </div>
+
+        <div class="occ-legend">
+          <span><i style="background:#d0343b"></i>Incêndio</span>
+          <span><i style="background:#2f7de1"></i>Saúde</span>
+          <span><i style="background:#f08c00"></i>Acidente / salvamento</span>
+          <span><i style="background:#6c757d"></i>Outra</span>
         </div>
       </div>
     </section>
 
-    <section class="section section-beige">
-      <div class="container about-grid">
-        <div class="reveal">
-          <div class="tagline"><svg class="icon" aria-hidden="true"><use href="#i-hydrant"/></svg>Facebook</div>
-          <h2>Acompanhe-nos em tempo real</h2>
-          <p>Ocorrências, avisos à população, formações e eventos são publicados em primeira mão na nossa página de Facebook.</p>
-          <a class="btn btn-red" href="https://www.facebook.com/bombeirossintra/" target="_blank" rel="noopener">Ver página no Facebook</a>
-        </div>
-        <div class="reveal">
-          <iframe title="Publicações do Facebook dos Bombeiros Voluntários de Sintra" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbombeirossintra%2F&amp;tabs=timeline&amp;width=500&amp;height=640&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false" width="500" height="640" style="border:none;overflow:hidden;max-width:100%" loading="lazy" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-    </section>
+    <div class="occ-modal" id="occ-modal" role="dialog" aria-modal="true" aria-labelledby="occ-modal-title" hidden>
+      <div class="occ-modal-backdrop" data-close></div>
+      <div class="occ-modal-box" id="occ-modal-box"></div>
+    </div>
 
   </main>
 
@@ -192,6 +185,8 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/js/ocorrencias.js"></script>
 
 </body>
 </html>

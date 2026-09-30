@@ -1,0 +1,14 @@
+{
+  "demo": true,
+  "fonte": "Dados fictícios de demonstração. Serão substituídos pelos dados da ANEPC (via Fogos.pt).",
+  "ocorrencias": [
+    { "id": "D-001", "minutos_atras": 38, "tipo": "incendio", "natureza": "Incêndio em mato", "estado": "Em curso", "freguesia": "São João das Lampas e Terrugem", "localidade": "Magoito", "lat": 38.8620, "lng": -9.4430, "operacionais": 18, "viaturas": 5, "meios_aereos": 1 },
+    { "id": "D-002", "minutos_atras": 22, "tipo": "acidente", "natureza": "Acidente rodoviário com feridos", "estado": "Em curso", "freguesia": "São Martinho", "localidade": "IC30, Várzea de Sintra", "lat": 38.8115, "lng": -9.3860, "operacionais": 7, "viaturas": 3, "meios_aereos": 0 },
+    { "id": "D-003", "minutos_atras": 12, "tipo": "saude", "natureza": "Doença súbita", "estado": "Em resolução", "freguesia": "Sintra (Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim)", "localidade": "Centro Histórico de Sintra", "lat": 38.7976, "lng": -9.3897, "operacionais": 2, "viaturas": 1, "meios_aereos": 0 },
+    { "id": "D-004", "minutos_atras": 95, "tipo": "outro", "natureza": "Queda de árvore na via", "estado": "Concluída", "freguesia": "São Martinho", "localidade": "Estrada da Pena", "lat": 38.7890, "lng": -9.3880, "operacionais": 4, "viaturas": 1, "meios_aereos": 0 },
+    { "id": "D-005", "minutos_atras": 140, "tipo": "saude", "natureza": "Queda em via pública", "estado": "Concluída", "freguesia": "Sintra (Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim)", "localidade": "Estefânia", "lat": 38.8010, "lng": -9.3780, "operacionais": 2, "viaturas": 1, "meios_aereos": 0 },
+    { "id": "D-006", "minutos_atras": 210, "tipo": "outro", "natureza": "Abertura de porta", "estado": "Concluída", "freguesia": "São João das Lampas e Terrugem", "localidade": "Terrugem", "lat": 38.8480, "lng": -9.3590, "operacionais": 3, "viaturas": 1, "meios_aereos": 0 },
+    { "id": "D-007", "minutos_atras": 300, "tipo": "incendio", "natureza": "Incêndio em habitação", "estado": "Concluída", "freguesia": "São João das Lampas e Terrugem", "localidade": "São João das Lampas", "lat": 38.8710, "lng": -9.3930, "operacionais": 12, "viaturas": 4, "meios_aereos": 0 },
+    { "id": "D-008", "minutos_atras": 420, "tipo": "acidente", "natureza": "Salvamento em arriba", "estado": "Concluída", "freguesia": "São João das Lampas e Terrugem", "localidade": "Azenhas do Mar", "lat": 38.8400, "lng": -9.4610, "operacionais": 9, "viaturas": 3, "meios_aereos": 1 }
+  ]
+}
