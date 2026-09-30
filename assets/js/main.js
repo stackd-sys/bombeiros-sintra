@@ -1,6 +1,7 @@
 // Menu móvel
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav');
+
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
@@ -12,44 +13,6 @@ if (toggle && nav) {
 // Ano no rodapé
 document.querySelectorAll('[data-year]').forEach((el) => {
   el.textContent = new Date().getFullYear();
-});
-
-// Slider principal
-const slider = document.querySelector('.main-slider');
-if (slider) {
-  const slides = [...slider.querySelectorAll('.slide')];
-  const dots = [...slider.querySelectorAll('.slider-dots button')];
-  let current = 0;
-  let timer;
-  const show = (i) => {
-    current = (i + slides.length) % slides.length;
-    slides.forEach((s, n) => s.classList.toggle('is-active', n === current));
-    dots.forEach((d, n) => d.toggleAttribute('aria-current', n === current));
-    dots.forEach((d, n) => n === current && d.setAttribute('aria-current', 'true'));
-  };
-  const start = () => {
-    clearInterval(timer);
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      timer = setInterval(() => show(current + 1), 7000);
-    }
-  };
-  dots.forEach((d, n) => d.addEventListener('click', () => { show(n); start(); }));
-  start();
-}
-
-// Carrosséis (serviços, frota)
-document.querySelectorAll('[data-carousel]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const track = document.getElementById(btn.dataset.carousel);
-    if (!track) return;
-    const card = track.firstElementChild;
-    const step = card ? card.getBoundingClientRect().width + 30 : track.clientWidth;
-    const dir = btn.classList.contains('prev') ? -1 : 1;
-    const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 5;
-    if (dir === 1 && atEnd) track.scrollTo({ left: 0 });
-    else if (dir === -1 && track.scrollLeft <= 5) track.scrollTo({ left: track.scrollWidth });
-    else track.scrollBy({ left: dir * step });
-  });
 });
 
 // Aparecimento suave ao fazer scroll
@@ -67,6 +30,18 @@ if ('IntersectionObserver' in window) {
 } else {
   revealEls.forEach((el) => el.classList.add('is-visible'));
 }
+
+// Filtros da página de notícias
+const filterButtons = document.querySelectorAll('.filters button');
+filterButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const cat = btn.dataset.filter;
+    filterButtons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    document.querySelectorAll('.news-grid .news-card').forEach((card) => {
+      card.hidden = cat !== 'todas' && card.dataset.cat !== cat;
+    });
+  });
+});
 
 // Formulário de contacto (sem backend ainda)
 const form = document.querySelector('.form');
